@@ -50,7 +50,7 @@ const NavbarHome = () => {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className="  w-full  backdrop-blur-sm "
+        className="  w-full  backdrop-blur-sm duration-300 "
       >
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <h1 className="">

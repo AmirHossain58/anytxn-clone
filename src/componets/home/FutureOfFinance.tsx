@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 const FutureOfFinance = () => {
   return (
     <>
@@ -44,28 +45,52 @@ const FutureOfFinance = () => {
             {/* Floating Icons */}
             <div>
               <figure className="absolute top-[10%] right-[12%] translate-x-1/2 w-[min(115px,_30%)] rounded-full drop-shadow-2xl">
-                <img
+                <motion.img
                   src="/anybass1.svg"
                   alt="anybass1"
                   className="object-contain w-full h-full"
+                  animate={{
+                    y: [0, -10, 0],
+                  }}
+                  transition={{
+                    duration: 10, 
+                    repeat: Infinity, 
+                    ease: "easeInOut", 
+                  }}
                 />
               </figure>
 
               <figure className="absolute top-[40%] left-[20%] w-[min(87px,_20%)] rounded-full drop-shadow-2xl">
-                <img
+                <motion.img
                   src="/anybass2.svg"
                   alt="anypass"
                   className="object-contain w-full h-full"
                   loading="lazy"
+                  animate={{
+                    y: [0, -10, 0],
+                  }}
+                  transition={{
+                    duration: 10, 
+                    repeat: Infinity, 
+                    ease: "easeInOut", 
+                  }}
                 />
               </figure>
 
               <figure className="absolute top-[20%] left-[12%] -translate-x-1/2 w-[min(73px,_18%)] rounded-full drop-shadow-2xl">
-                <img
+                <motion.img
                   src="/anycaas.svg"
                   alt="anycaas"
                   className="object-contain w-full h-full"
                   loading="lazy"
+                  animate={{
+                    y: [0, -10, 0],
+                  }}
+                  transition={{
+                    duration: 10, 
+                    repeat: Infinity, 
+                    ease: "easeInOut", 
+                  }}
                 />
               </figure>
             </div>
@@ -76,11 +101,19 @@ const FutureOfFinance = () => {
             //     animation: "bounce 5s infinite ease-in-out"
             //   }}
             className="customBounce absolute inset-0 w-full h-full -z-10 ">
-              <img
+              <motion.img
                 className="object-cover w-full h-full"
                 src="/background1111.svg"
                 alt="background frame"
                 loading="lazy"
+                animate={{
+                  y: [0, -50, 0],
+                }}
+                transition={{
+                  duration: 10, 
+                  repeat: Infinity, 
+                  ease: "easeInOut", 
+                }}
               />
             </figure>
           </div>

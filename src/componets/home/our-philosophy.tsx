@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 export default function OurPhilosophy() {
   return (
     <section className="max-w-[1138px] mx-auto ">
@@ -14,13 +15,17 @@ export default function OurPhilosophy() {
 
       <div className="grid lg:grid-cols-3 grid-cols-2 gap-[30px]">
         {data.map((item) => (
-          <div key={item.title} className="p-8 rounded-[20px]  bg-[#F8FCFF]">
+          <motion.div
+          initial={{ opacity: 0, y: 100 }} 
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 2 }} 
+           key={item.title} className="p-8 rounded-[20px]  bg-[#F8FCFF]">
             <img src={item.icon} alt="" />
             <h3 className="my-6 text-2xl font-semibold text-[#0B305B]">
               {item.title}
             </h3>
             <p className="text-[#164377]">{item.details}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
