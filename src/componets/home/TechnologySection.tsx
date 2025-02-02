@@ -1,18 +1,22 @@
-import React, { useRef, useState } from "react";
+import { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/navigation";
+   // @ts-ignore
+   import "swiper/css";
+   // @ts-ignore
+   import "swiper/css/free-mode";
+   // @ts-ignore
+   import "swiper/css/navigation";
+   // @ts-ignore
 import "swiper/css/thumbs";
-
+import type { Swiper as SwiperType } from "swiper/types";
 // import required modules
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 
 export default function TechnologySection() {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  console.log(thumbsSwiper);
+  const [thumbsSwiper, setThumbsSwiper] =   useState<SwiperType | null>(null);
+  // console.log(thumbsSwiper);
 
   return (
     <>
@@ -26,7 +30,7 @@ export default function TechnologySection() {
           </h2>
         </header>
         <Swiper
-          onSwiper={setThumbsSwiper}
+          onSwiper={(swiper) => setThumbsSwiper(swiper)}
           loop={true}
           spaceBetween={10}
           slidesPerView={4}
@@ -59,6 +63,7 @@ export default function TechnologySection() {
 
         <Swiper
           style={{
+            // @ts-ignore
             "--swiper-navigation-color": "#fff",
             "--swiper-pagination-color": "#fff",
           }}

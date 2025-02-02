@@ -78,9 +78,9 @@ const images = [
   }
 ];
 const TrustedByTheBest = () => {
-  const yearsExperienceProps = useSpring({ from: { number: 0 }, to: { number: 20 }, config: { duration: 1000 } });
-  const financialInstitutionsProps = useSpring({ from: { number: 0 }, to: { number: 40 }, config: { duration: 1000 } });
-  const customersEachProps = useSpring({ from: { number: 0 }, to: { number: 200 }, config: { duration: 1000 } });
+  const yearsExperienceProps = useSpring({ from: { number: 0 }, to: { number: 20 }, config: { duration: 1500 } });
+  const financialInstitutionsProps = useSpring({ from: { number: 0 }, to: { number: 40 }, config: { duration: 1500 } });
+  const customersEachProps = useSpring({ from: { number: 0 }, to: { number: 200 }, config: { duration: 1500 } });
 
 
   return (
@@ -92,33 +92,33 @@ const TrustedByTheBest = () => {
     TRUSTED BY THE BEST
   </h6>
 
-  <div className="items-center justify-between max-lg:space-y-6 lg:flex xl:mx-28">
+     <div className="items-center justify-between max-lg:space-y-6 lg:flex xl:mx-28">
       <div className="flex items-center border-dashed max-lg:justify-between lg:flex-col max-lg:border-b border-blue-highlight max-lg:pb-xs">
-        <h2 className="max-[280px]:text-[40px] text-[64px] lg:text-[96px] font-Montserrat tracking-[-0.02em] font-semibold leading-none bg-[#0d68d2] text-transparent bg-clip-text">
-          &gt;<span>20</span>
-        </h2>
+        <animated.h2 className="max-[280px]:text-[40px] text-[64px] lg:text-[96px] font-Montserrat tracking-[-0.02em] font-semibold leading-none bg-[#0d68d2] text-transparent bg-clip-text">
+          &gt;<animated.span>{yearsExperienceProps.number.to(n => n.toFixed(0))}</animated.span>
+        </animated.h2>
         <p className="text-right text-[#151D2F] lg:text-center max-lg:text-res-link lg:text-lg lg:mt-[19px]">
           Years of Experience
         </p>
       </div>
       <div className="flex items-center border-dashed max-lg:justify-between lg:flex-col max-lg:border-b border-blue-highlight max-lg:pb-xs">
-        <h2 className="max-[280px]:text-[40px] text-[64px] lg:text-[96px] font-Montserrat tracking-[-0.02em] font-semibold leading-none bg-[#0d68d2] text-transparent bg-clip-text">
-          <span>40</span>+
-        </h2>
+        <animated.h2 className="max-[280px]:text-[40px] text-[64px] lg:text-[96px] font-Montserrat tracking-[-0.02em] font-semibold leading-none bg-[#0d68d2] text-transparent bg-clip-text">
+          <animated.span>{financialInstitutionsProps.number.to(n => n.toFixed(0))}</animated.span>+
+        </animated.h2>
         <p className="text-right text-[#151D2F] lg:text-center max-lg:text-res-link lg:text-lg lg:mt-[19px]">
           Financial Institutions
         </p>
       </div>
       <div className="flex items-center border-dashed max-lg:justify-between lg:flex-col max-lg:border-b border-blue-highlight max-lg:pb-xs">
-        <h2 className="max-[280px]:text-[40px] text-[64px] lg:text-[96px] font-Montserrat tracking-[-0.02em] font-semibold leading-none bg-[#0d68d2] text-transparent bg-clip-text">
-          &gt;<span>200</span>m
-        </h2>
+        <animated.h2 className="max-[280px]:text-[40px] text-[64px] lg:text-[96px] font-Montserrat tracking-[-0.02em] font-semibold leading-none bg-[#0d68d2] text-transparent bg-clip-text">
+          &gt;<animated.span>{customersEachProps.number.to(n => n.toFixed(0))}</animated.span>m
+        </animated.h2>
         <p className="text-right text-[#151D2F] lg:text-center max-lg:text-res-link lg:text-lg lg:mt-[19px]">
           Customers Each
         </p>
       </div>
     </div>
-      <div className="mt-xl grid grid-cols-3 gap-x-16 gap-y-[34px] max-md:hidden lg:grid-cols-5" contentEditable="false">
+      <div className="mt-10  md:mt-32 grid grid-cols-3 gap-x-16 gap-y-[34px] max-md:hidden lg:grid-cols-5" contentEditable="false">
         {/* Repeat the picture component for each image */}
         {images.map((image, index) => (
           <picture key={index} className="flex items-stretch bg-cover" contentEditable="false">
