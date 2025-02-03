@@ -46,7 +46,7 @@ const ModalMenu = ({scroll}:{scroll:boolean}) => {
     };
 
   return (
-    <div className="">
+    <div className="md:hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={`${scroll?'text-gray-700':'text-white'} p-1`}
