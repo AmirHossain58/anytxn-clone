@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import ModalMenu from "./modal-menu";
 
 const Navbar = ({ showNavbar }:{ showNavbar: boolean}) => {
   const [lModal, setLModal] = useState(false);
@@ -172,6 +173,7 @@ const Navbar = ({ showNavbar }:{ showNavbar: boolean}) => {
               <path d="M6.67969 5.89844L2.13281 10.4688C1.89844 10.6797 1.54688 10.6797 1.33594 10.4688L0.796875 9.92969C0.585938 9.71875 0.585938 9.36719 0.796875 9.13281L4.40625 5.5L0.796875 1.89062C0.585938 1.65625 0.585938 1.30469 0.796875 1.09375L1.33594 0.554688C1.54688 0.34375 1.89844 0.34375 2.13281 0.554688L6.67969 5.125C6.89062 5.33594 6.89062 5.6875 6.67969 5.89844Z"></path>
             </svg>
           </a>
+          <ModalMenu scroll={true}  />
         </div>
       </motion.nav>
     </header>

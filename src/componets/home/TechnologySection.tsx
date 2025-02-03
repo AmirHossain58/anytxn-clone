@@ -29,6 +29,7 @@ export default function TechnologySection() {
             The future of finance
           </h2>
         </header>
+        <div className="hidden md:block">
         <Swiper
           onSwiper={(swiper) => setThumbsSwiper(swiper)}
           loop={true}
@@ -42,7 +43,7 @@ export default function TechnologySection() {
           slidesPerView={4}
           freeMode={true}
           watchSlidesProgress={true}
-          className="mySwiper"
+          className="mySwiper "
         >
           <SwiperSlide>
             <button className=" text-[#1f80f0] font-semibold px-6 py-2 rounded-full hover:bg-blue-50  transition-colors duration-300">
@@ -65,6 +66,7 @@ export default function TechnologySection() {
             </button>
           </SwiperSlide>
         </Swiper>
+        </div>
 
         <Swiper
           style={{

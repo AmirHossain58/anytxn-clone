@@ -2,14 +2,14 @@ import { motion } from 'framer-motion';
 const FutureOfFinance = () => {
   return (
     <>
-      <section className="max-w-[1138px] mx-auto mt-[62px]">
+      <section className="max-w-[1138px] mx-auto mt-[62px] px-8">
         <section className="grid md:grid-cols-2 grid-cols-1 md:gap-[15px] relative">
           {/* Left Content */}
           <div className="md:space-y-sm space-y-xs flex flex-col justify-center ">
-            <h6 className="lg:text-2xl  uppercase text-blue-500 font-Montserrat font-semibold">
+            <h6 className="lg:text-2xl  uppercase text-[#57a0f4] font-Montserrat font-semibold">
               POWERING THE FUTURE OF FINANCE
             </h6>
-            <h2 className="whitespace-pre-line font-Montserrat text-res-head-2 tracking-wide text-blue-950 lg:text-6xl font-bold ">
+            <h2 className="whitespace-pre-line font-Montserrat text-res-head-2 tracking-wide text-blue-900 text-3xl  lg:text-6xl font-bold mt-6 mb-12">
               Uncovering new ways to delight customers
             </h2>
             <div className="hidden md:block mt-8">
@@ -119,8 +119,8 @@ const FutureOfFinance = () => {
           </div>
         </section>
       </section>
-      <div className="md:hidden">
-            <div className=" text-base text-gray-700">
+      <div className="md:hidden px-8 mt-14 space-y-6">
+            <div className=" text-base text-blue-950">
               <p className="font-semibold">
                 AnyTech is revolutionizing financial technology by introducing
                 innovative and real-time transaction account processing

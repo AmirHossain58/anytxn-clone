@@ -27,8 +27,8 @@ const CTAComponent: React.FC = () => {
           isVisible ? "animate-cta-background" : ""
         }`}
       >
-        <div className="max-w-[1138px] mx-auto flex w-full items-start justify-center h-full relative z-10 flex-col mt-6">
-          <h2 className="font-Montserrat text-res-head-2 text-white text-3xl  lg:text-6xl font-bold mb-[24px]">
+        <div className="max-w-[1138px] mx-auto flex w-full items-start justify-center h-full relative z-10 flex-col mt-6 px-6">
+          <h2 className="font-Montserrat text-res-head-2 text-white text-3xl  lg:text-6xl font-bold mb-[24px] ">
             Legacy no longer
           </h2>
           <p className="text-base lg:text-lg 2xl:text-xl lg:whitespace-pre-line mb-[30px]">
@@ -38,7 +38,7 @@ const CTAComponent: React.FC = () => {
           <div className="flex lg:flex-row flex-col lg:space-x-[16px] space-y-4 lg:space-y-0 w-full">
           <a
             href="/en/contact-us"
-            className="hover:bg-[#FF8144]  bg-[#FE8B53] text-white  hidden max-lg:w-full max-lg:justify-center max-lg:mt-16 pl-6 pr-10 py-[13px] text-res-link lg:text-link lg:flex items-center group/highlight transition-all drop-shadow-button-primary font-black hover:shadow-button-primary rounded-xs"
+            className="hover:bg-[#FF8144]  bg-[#FE8B53] text-white max-lg:w-full max-lg:justify-center max-lg:mt-16 pl-6 pr-10 py-[13px] text-res-link lg:text-link lg:flex items-center group/highlight transition-all drop-shadow-button-primary font-black hover:shadow-button-primary rounded-xs"
           >
             Contact Us
             <svg

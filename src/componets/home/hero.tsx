@@ -642,7 +642,7 @@ export default function HeroSection() {
           </defs>
         </svg>
 
-        <div className="max-w-[1138px] z-50  mx-auto px-4 pt-32 pb-20  relative">
+        <div className="max-w-[1138px] z-20  mx-auto px-4 pt-32 pb-20  relative">
           <div className="relative z-10 w-full h-full flex items-center justify-center">
             <div className="h-fit lg:flex-[65] xl:flex-[75]">
               <header className=" space-y-4 lg:space-y-2 mb-8">

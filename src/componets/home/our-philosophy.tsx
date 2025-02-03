@@ -1,4 +1,10 @@
 import { motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+// @ts-ignore
+import 'swiper/css';
+// @ts-ignore
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 export default function OurPhilosophy() {
   return (
     <section className="max-w-[1138px] mx-auto ">
@@ -7,13 +13,48 @@ export default function OurPhilosophy() {
           OUR PHILOSOPHY
         </h6>
 
-        <h2 className="whitespace-pre-line text-2xl lg:text-6xl text-[#0B305B] font-bold">
+        <h2 className="whitespace-pre-line text-2xl lg:text-6xl text-[#0B305B]  font-bold">
           Human-centred innovation
         </h2>
       </div>
-      <img className="py-8" src="/philosophy.avif" alt="" />
+      <img className="py-8 hidden md:block " src="/philosophy.avif" alt="" />
+      <img className="py-8 px-8 md:hidden" src="/philosophy-sm.avif" alt="" />
 
-      <div className="grid lg:grid-cols-3 grid-cols-2 gap-[30px]">
+
+     <div className='md:hidden pl-10'>
+     <Swiper
+      slidesPerView={1.3}
+      spaceBetween={30}
+      pagination={{ clickable: true }}
+      breakpoints={{
+        1024: { slidesPerView: 3 },
+        768: { slidesPerView: 2 },
+      }}
+      modules={[Pagination]}
+      className="mySwiper"
+    >
+      {data.map((item) => (
+        <SwiperSlide key={item.title}>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2 }}
+            className="p-8 rounded-[20px] bg-[#F8FCFF]"
+          >
+            <div className='h-10 w-10'>
+            <img className='' src={item.icon} alt="" />
+            </div>
+            <h3 className="my-6 text-2xl font-semibold text-[#0B305B]">
+              {item.title}
+            </h3>
+            <p className="text-[#164377]">{item.details}</p>
+          </motion.div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+     </div>
+
+      <div className="hidden  md:grid md:grid-cols-3 gap-[30px]">
         {data.map((item) => (
           <motion.div
           initial={{ opacity: 0, y: 100 }} 

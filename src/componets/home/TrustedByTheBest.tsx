@@ -86,14 +86,14 @@ const TrustedByTheBest = () => {
   return (
     <div className="max-w-[1138px] mx-auto" contentEditable="false">
        <h6
-    className="pb-lg text-center lg:pb-md lg:text-head-6 text-res-head-6 uppercase text-blue-main font-Montserrat"
-    contentEditable={false}
+    className="pb-lg text-center lg:pb-md lg:text-head-6 text-res-head-6 uppercase text-blue-main font-Montserrat text-[#0d68d2]"
+    
   >
     TRUSTED BY THE BEST
   </h6>
 
      <div className="items-center justify-between max-lg:space-y-6 lg:flex xl:mx-28">
-      <div className="flex items-center border-dashed max-lg:justify-between lg:flex-col max-lg:border-b border-blue-highlight max-lg:pb-xs">
+      <div className="flex items-center border-dashed max-lg:justify-between lg:flex-col px-6 my-3 md:px-0 md:my-0  max-lg:border-b border-blue-highlight max-lg:pb-xs">
         <animated.h2 className="max-[280px]:text-[40px] text-[64px] lg:text-[96px] font-Montserrat tracking-[-0.02em] font-semibold leading-none bg-[#0d68d2] text-transparent bg-clip-text">
           &gt;<animated.span>{yearsExperienceProps.number.to(n => n.toFixed(0))}</animated.span>
         </animated.h2>
@@ -101,7 +101,7 @@ const TrustedByTheBest = () => {
           Years of Experience
         </p>
       </div>
-      <div className="flex items-center border-dashed max-lg:justify-between lg:flex-col max-lg:border-b border-blue-highlight max-lg:pb-xs">
+      <div className="flex items-center border-dashed max-lg:justify-between lg:flex-col px-6 my-3 md:px-0 md:my-0  max-lg:border-b border-blue-highlight max-lg:pb-xs">
         <animated.h2 className="max-[280px]:text-[40px] text-[64px] lg:text-[96px] font-Montserrat tracking-[-0.02em] font-semibold leading-none bg-[#0d68d2] text-transparent bg-clip-text">
           <animated.span>{financialInstitutionsProps.number.to(n => n.toFixed(0))}</animated.span>+
         </animated.h2>
@@ -109,7 +109,7 @@ const TrustedByTheBest = () => {
           Financial Institutions
         </p>
       </div>
-      <div className="flex items-center border-dashed max-lg:justify-between lg:flex-col max-lg:border-b border-blue-highlight max-lg:pb-xs">
+      <div className="flex items-center border-dashed max-lg:justify-between lg:flex-col  px-6 my-3 md:px-0 md:my-0  max-lg:border-b border-blue-highlight max-lg:pb-xs">
         <animated.h2 className="max-[280px]:text-[40px] text-[64px] lg:text-[96px] font-Montserrat tracking-[-0.02em] font-semibold leading-none bg-[#0d68d2] text-transparent bg-clip-text">
           &gt;<animated.span>{customersEachProps.number.to(n => n.toFixed(0))}</animated.span>m
         </animated.h2>

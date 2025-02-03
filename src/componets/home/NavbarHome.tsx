@@ -1,6 +1,7 @@
 import { ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import ModalMenu from "../shared/modal-menu";
 
 const NavbarHome = () => {
   const [lModal, setLModal] = useState(false);
@@ -239,6 +240,8 @@ const NavbarHome = () => {
           <button className="ml-4 px-6  text-white hover:bg-white hover:text-[#539df4]  border border-white bg-transparent  hover:text-blue-main hidden max-lg:w-full max-lg:justify-center max-lg:mt-16 pl-6 pr-10 py-[13px] text-res-link lg:text-link lg:flex items-center group/highlight transition-all drop-shadow-button-primary hover:shadow-button-primary rounded-xs font-semibold hover:scale-103">
             {`Contact Us >`}
           </button>
+          {/* menu modal for small device */}
+          <ModalMenu scroll={false}/>
         </div>
       </motion.nav>
     </nav>
